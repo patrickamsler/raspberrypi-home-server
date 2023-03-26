@@ -7,7 +7,7 @@ The setup of my Raspberry Pi home server that can be used to play media, downloa
 - [Install Raspberry PI OS in headless mode](#Install-Raspberry-PI-OS-without-Desktop)
 - [SSH Access](doc/SSH.md)
 - [Install Kodi](doc/Kodi.md)
-- [Install Mosuitto MQTT](doc/Mosquitto.md)
+- [Install Mosquitto MQTT](doc/Mosquitto.md)
 
 ### Install Raspberry PI OS without Desktop
 
