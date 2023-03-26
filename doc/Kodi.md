@@ -2,11 +2,7 @@
 
 Kodi is a free and open-source media player software that can be used to play a wide variety of media files, including videos, music, and photos. Originally developed for the Xbox gaming console, Kodi is now available on a wide range of platforms, including Raspberry Pi.
 
-Kodi's user interface is highly customizable and allows users to organize their media library in a variety of ways. It also supports a wide range of add-ons and plugins that can be used to extend its functionality, including support for streaming services, live TV, and more.
-
 One of the key features of Kodi is its ability to handle a wide range of media formats, including high-resolution video and audio formats. It also supports subtitles and can automatically download and sync subtitles for media files.
-
-Overall, Kodi is a versatile media player that can be used to play, organize, and stream media files from a variety of sources, making it a popular choice for home theater enthusiasts and media enthusiasts alike.
 
 ## Installation
 
@@ -23,3 +19,11 @@ If you're running Raspberry Pi OS in headless mode and want to use Kodi on a TV 
 9.	Once your Raspberry Pi has restarted, Kodi should automatically launch on your TV through the HDMI output.
 
 That's it! You now have Kodi running on your TV through the HDMI output of your Raspberry Pi.
+
+In general, the user that runs Kodi on a Raspberry Pi needs to belong to the "video" and "audio" groups. This is because Kodi requires access to the video and audio devices on the system to play media. The default pi user belongs to this group. If run Kodi with a differen user you may add it to the groups.
+
+To add a user to the "video" and "audio" groups, you can run the following commands:
+```bash
+sudo usermod -a -G video <username>
+sudo usermod -a -G audio <username>
+```

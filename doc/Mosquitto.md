@@ -65,9 +65,9 @@ mosquitto_sub \
 - `-h 192.168.1.2`: Specifies the IP address of the MQTT broker to connect to.
 - `-p 1883`: Specifies the port number of the MQTT broker to connect to (1883 is the default port for non-encrypted MQTT).
 - `-t livingroom/#`: Specifies the MQTT topic filter to subscribe to. In this example, it subscribes to all topics that start with `livingroom/`.
-- `-u iot`: Specifies the username to use when connecting to the MQTT broker.
-- `-P password`: Specifies the password to use when connecting to the MQTT broker.
-- `-i testsubscriber`: Specifies the client identifier to use when connecting to the MQTT broker.
+- `-u iot`: Specifies the username
+- `-P password`: Specifies the password
+- `-i testsubscriber`: Specifies the client identifier
 - `-v`: Enables verbose output, which displays the received messages along with other debug information.
 - `-d`: Enables debug output
 
@@ -89,9 +89,9 @@ mosquitto_pub \
 - `-p 1883`: Specifies the port number of the MQTT broker to connect to (1883 is the default port for non-encrypted MQTT).
 - `-m "hello mqtt"`: Specifies the message payload to publish to the topic.
 - `-t livingroom/temp`: Specifies the MQTT topic to publish the message to.
-- `-u iot`: Specifies the username to use when connecting to the MQTT broker.
-- `-P password`: Specifies the password to use when connecting to the MQTT broker.
-- `-i testpublisher`: Specifies the client identifier to use when connecting to the MQTT broker.
+- `-u iot`: Specifies the username
+- `-P password`: Specifies the password
+- `-i testpublisher`: Specifies the client identifier
 - `-d`: Enables debug output
 
 ## QoS
@@ -100,7 +100,7 @@ MQTT uses a Quality of Service (QoS) level to define the guarantee of message de
 
 - QoS 0: At most once delivery means that the message is delivered once or not at all. There is no acknowledgment or retransmission of the message.
 - QoS 1: At least once delivery means that the message is delivered at least once.
-- QoS 2: Exactly once delivery means that the message is delivered exactly once and only once, regardless of network or system failures. This level of QoS involves a handshake between the broker and receiver to ensure that the message is only delivered once.
+- QoS 2: Exactly once delivery means that the message is delivered exactly once and only once, regardless of network or system failures. This level of QoS involves a handshake between the broker and receiver.
 
 Example with Qos 1:
 ```bash
