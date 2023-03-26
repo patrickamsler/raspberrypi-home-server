@@ -2,8 +2,6 @@
 
 Mosquitto is an open-source message broker that implements the MQTT (Message Queuing Telemetry Transport) protocol. MQTT is a lightweight, publish-subscribe messaging protocol that is designed to be efficient, reliable, and easy to implement.
 
-Mosquitto allows devices to publish and subscribe to topics, enabling them to exchange messages with each other in a distributed system. It supports various quality of service (QoS) levels, allowing devices to choose the appropriate level of reliability and performance for their needs.
-
 ## Install Broker
 
 Install mosquitto and optional client tools:
@@ -97,10 +95,6 @@ mosquitto_pub \
 ## QoS
 
 MQTT uses a Quality of Service (QoS) level to define the guarantee of message delivery between the sender and the receiver. Mosquitto, being an MQTT broker, supports three QoS levels: QoS 0 (At most once), QoS 1 (At least once), and QoS 2 (Exactly once).
-
-- QoS 0: At most once delivery means that the message is delivered once or not at all. There is no acknowledgment or retransmission of the message.
-- QoS 1: At least once delivery means that the message is delivered at least once.
-- QoS 2: Exactly once delivery means that the message is delivered exactly once and only once, regardless of network or system failures. This level of QoS involves a handshake between the broker and receiver.
 
 Example with Qos 1:
 ```bash
