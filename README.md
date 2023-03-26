@@ -4,11 +4,12 @@ The setup of my Raspberry Pi home server that can be used to play media, downloa
 
 ## Table of Contents
 
-- [Configer SSH Access](#doc/SSH.md)
+- [Install Raspberry PI OS in headless mode](#Install-Raspberry-PI-OS-without-Desktop)
+- [SSH Access](doc/SSH.md)
 - [Install Kodi](doc/Kodi.md)
 - [Install Mosuitto MQTT](doc/Mosquitto.md)
 
-### Install Raspberry PI OS in headless mode
+### Install Raspberry PI OS without Desktop
 
 1. Download and install the Raspberry Pi Imager software on your computer.
 2. Connect your Raspberry Pi to your network using an Ethernet cable and power it on.
